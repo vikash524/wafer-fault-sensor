@@ -3,17 +3,17 @@ import pandas as pd
 import json
 
 # uniform resource indentifier
-uri = "mongodb+srv://snshrivas:Snshrivas@cluster0.u46c4.mongodb.net/?retryWrites=true&w=majority"
+uri = "mongodb+srv://vikashchauhan:vikashchauhan@cluster0.xdsknwb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 # Create a new client and connect to the server
 client = MongoClient(uri)
 
 # create database name and collection name
-DATABASE_NAME="pwskills"
+DATABASE_NAME="project1"
 COLLECTION_NAME="waferfault"
 
 # read the data as a dataframe
-df=pd.read_csv(r"C:\Study1\ALL_PROJECTS\wafer_fault_detection_pw\sensor-fault-detection\notebooks\wafer_23012020_041211.csv")
+df=pd.read_csv(r"C:\Users\Acer\Desktop\sensor2-main\notebooks\wafer_23012020_041211.csv")
 df=df.drop("Unnamed: 0",axis=1)
 
 # Convert the data into json

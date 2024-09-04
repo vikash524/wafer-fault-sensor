@@ -6,6 +6,7 @@ upload_data_to_db
 upload_data.py
 # C extensions
 *.so
+deployment_documentation/local_project _setup.md
 deployment_documentation
 # Distribution / packaging
 .Python
@@ -160,3 +161,9 @@ dmypy.json
 cython_debug/
 
 # PyCharm
+
+upload_data.py
+deployment_documentation
+artifacts
+test.ipynb_checkpoints  
+prediction_artifacts
